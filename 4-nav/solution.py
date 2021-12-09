@@ -21,9 +21,6 @@ class Command:
         self.distance = distance
 
 
-#def print_pos(
-
-
 def parse_movement(path: Path) -> List[Command]:
 
     commands = []
