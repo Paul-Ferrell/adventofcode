@@ -9,7 +9,7 @@ def main(input_path: str):
 
     pos = navigate(commands, (0, 0, 0))
 
-    print(pos)
+    print('final position', pos)
     print(pos[0]*pos[2])
 
 FORWARD = 'forward'
@@ -49,6 +49,7 @@ def parse_movement(path: Path) -> List[Command]:
 
 def navigate(commands: List[Command], start_pos: Tuple[int,int,int] = (0,0,0)) \
         -> Tuple[int, int, int]:
+    """Alter the current submarine position according to each command."""
 
     x, y, depth = start_pos
 
